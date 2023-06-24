@@ -72,7 +72,7 @@ body {
 
 .navigation {
     position: fixed;
-    left: 8rem;
+    left: -32rem;
     width: 40rem;
     height: 100%;
     background: linear-gradient(to top, rgba(34, 32, 41, 1), rgba(34, 32, 41, .8)) ,url(../imgs/nav-bg.jpeg) center no-repeat;
@@ -189,6 +189,23 @@ body {
     color: #fff;
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+}
+.burger-checkbox:checked ~ .navigation {
+    left: 8rem;
+}
+
+.burger-checkbox:checked ~ .sidebar .line-1 {
+    transform: rotate(-405deg) translate(-5px, 6px);
+    width: 2.5rem;
+}
+
+.burger-checkbox:checked ~ .sidebar .line-2 {
+    opacity: 0;
+}
+
+.burger-checkbox:checked ~ .sidebar .line-3 {
+    transform: rotate(405deg) translate(-5px, -6px);
+    width: 2.5rem;
 }
 
 /* $navigation */
